@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     steps:
-      - uses: gmaxey/install@v1
+      - uses: gmaxey/comp1@v1
         name: Install comp1
         kind: deploy
         with:
