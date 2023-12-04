@@ -8,12 +8,12 @@ on:
 jobs:
   deploy:
     steps:
-      - uses: gmaxey/comp1/install@main
+      - uses: gmaxey/comp1/install@v1
         name: Install comp1
         kind: deploy
         with:
           version: "1"
-      - uses: gmaxey/comp2/install@main
+      - uses: gmaxey/comp2/install@v1
         name: Install comp2
         kind: deploy
         with:
