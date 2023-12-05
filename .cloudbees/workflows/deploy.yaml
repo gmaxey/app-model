@@ -12,4 +12,4 @@ jobs:
         name: Deploy application
         kind: deploy
         with:
-          environment: QA
+          environment: Pre-prod
