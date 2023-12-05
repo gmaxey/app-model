@@ -10,12 +10,12 @@ runs:
   using: composite
   steps:
       - uses: gmaxey/comp1/install@main
-        name: Install comp1
+        run-name: Install comp1
         kind: deploy
         with:
           version: "1"
       - uses: gmaxey/comp2/install@main
-        name: Install comp2
+        run-name: Install comp2
         kind: deploy
         with:
           version: "2"
