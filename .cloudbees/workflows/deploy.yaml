@@ -8,13 +8,6 @@ on:
 jobs:
   deploy:
     steps:
-      - uses: gmaxey/comp1/install@main
-        name: Install comp1
+      - uses: gmaxey/app-model/Deploy@main
+        name: Deploy application
         kind: deploy
-        with:
-          version: "1"
-      - uses: gmaxey/comp2/install@main
-        name: Install comp2
-        kind: deploy
-        with:
-          version: "2"
