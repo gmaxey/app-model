@@ -1,0 +1,21 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: action
+name: Deploy application
+inputs:
+  environment:  
+    description: Target environment name for deployment
+    required: true
+outputs: 
+runs:
+  using: composite
+  steps:
+      - uses: gmaxey/comp1/install@main
+        name: Install comp1
+        kind: deploy
+        with:
+          version: "1"
+      - uses: gmaxey/comp2/install@main
+        name: Install comp2
+        kind: deploy
+        with:
+          version: "2"
