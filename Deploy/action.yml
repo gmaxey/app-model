@@ -5,7 +5,8 @@ inputs:
   connectionPort:  
     required: true
 outputs: 
-  connectionUrl
+  connectionUrl:
+    value: "11111"
 runs:
   using: composite
   steps:
