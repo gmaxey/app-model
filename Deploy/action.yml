@@ -6,7 +6,7 @@ inputs:
     required: true
 outputs: 
   connectionUrl:
-    value: "11111"
+    value: "${{ steps.setUrl.outputs.url }}""
 runs:
   using: composite
   steps:
@@ -20,6 +20,7 @@ runs:
         kind: deploy
         with:
           version: "2"
-      - run: echo "https://myapp.com:${{ inputs.connectionPort }}"
+      - run: echo "url=https://myapp.com:${{ inputs.connectionPort }}" >> "$CLOUDBEES_OUTPUT"
+        id: setUrl
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
