@@ -5,6 +5,7 @@ inputs:
   connectionPort:  
     required: true
 outputs: 
+  connectionUrl
 runs:
   using: composite
   steps:
@@ -18,3 +19,4 @@ runs:
         kind: deploy
         with:
           version: "2"
+      - run: echo "https://myapp.com:${{ inputs.connectionPort }}" >> $CLOUDBEES_OUTPUT
