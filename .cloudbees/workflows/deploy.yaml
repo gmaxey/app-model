@@ -13,4 +13,4 @@ jobs:
         name: Deploy application
         kind: deploy
         with:
-          environment: Pre-prod
+          connectionPort: ${{ environment.CONNECTION_PORT }}
