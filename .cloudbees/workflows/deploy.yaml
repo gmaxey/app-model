@@ -11,6 +11,10 @@ jobs:
     steps:
       - uses: gmaxey/app-model/Deploy@main
         name: Deploy application
+        id: deploy
         kind: deploy
         with:
           connectionPort: "${{ vars.CONNECTION_PORT }}"
+      - run: echo "${{ steps.deploy.outputs.connectionUrl }}"
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
