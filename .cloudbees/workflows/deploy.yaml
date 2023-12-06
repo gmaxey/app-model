@@ -13,4 +13,4 @@ jobs:
         name: Deploy application
         kind: deploy
         with:
-          connectionPort: ${{ environment.CONNECTION_PORT }}
+          connectionPort: ${{ env.CONNECTION_PORT }}
