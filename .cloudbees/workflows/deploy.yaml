@@ -11,5 +11,6 @@ jobs:
       - uses: gmaxey/app-model/Deploy@main
         name: Deploy application
         kind: deploy
+        environment: UAT
         with:
           environment: Pre-prod
