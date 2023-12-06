@@ -20,6 +20,6 @@ runs:
         kind: deploy
         with:
           version: "2"
-      - run: echo "https://myapp.com:${{ inputs.connectionPort}}"
+      - run: echo "https://myapp.com:${{ inputs.connectionPort }}"
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
