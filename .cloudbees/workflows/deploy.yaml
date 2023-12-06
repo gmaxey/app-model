@@ -13,4 +13,4 @@ jobs:
         name: Deploy application
         kind: deploy
         with:
-          connectionPort: "${{ jobs.deploy.environment }}" # replace with environment reference
+          connectionPort: "${{ jobs.deploy }}" # replace with environment reference
