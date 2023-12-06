@@ -2,8 +2,7 @@ apiVersion: automation.cloudbees.io/v1alpha1
 kind: action
 name: Deploy application
 inputs:
-  environment:  
-    description: Target environment name for deployment
+  connectionPort:  
     required: true
 outputs: 
 runs:
