@@ -13,4 +13,4 @@ jobs:
         name: Deploy application
         kind: deploy
         with:
-          connectionPort: "${{ var.CONNECTION_PORT }}"
+          connectionPort: "${{ vars.CONNECTION_PORT }}"
