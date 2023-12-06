@@ -13,4 +13,4 @@ jobs:
         name: Deploy application
         kind: deploy
         with:
-          connectionPort: 12345 # replace with environment reference
+          connectionPort: "12345" # replace with environment reference
