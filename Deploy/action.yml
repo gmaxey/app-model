@@ -6,7 +6,7 @@ inputs:
     required: true
 outputs: 
   connectionUrl:
-    value: 33333 # "${{ steps.setUrl.outputs.CONNECTION_URL }}"
+    value: "33333" # "${{ steps.setUrl.outputs.CONNECTION_URL }}"
 runs:
   using: composite
   steps:
