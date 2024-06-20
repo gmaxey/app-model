@@ -2,12 +2,10 @@ apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: Deploy
 on:
-  push:
-    branches:
-      - "**"
+  workflow_dispatch:
 jobs:
   deploy:
-    environment: UAT
+    environment: gpm-qa
     steps:
       - uses: gmaxey/app-model/Deploy@main
         name: Deploy application
